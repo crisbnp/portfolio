@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL */
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+body {
+    text-align: center;
+}
+
+hr {
+    width: 2%;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+a {
+    text-decoration: none;
+    color: #76b39d;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+#logo {
+    font-family: 'Poppins', sans-serif;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#sayHi {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: #76b39d;
+    padding:10px;
+    border: solid 2px #76b39d;
+    border-radius: 28px;
+    background-color: #fff;
+    text-transform: lowercase;
+    cursor: pointer;
+    outline: none;
+}
+
+#sayHi:hover, #sayHi:active {
+    background-color: #76b39d;
+    color: #fff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+}
+
+.header-item {
+    align-self: center;
+    padding: 10px;
+}
+
+/* title svg */
+svg {
+    width: 80vw;
+    height: 35vh;
+  }
+  
+  /* computer */
+  path#b {
+    stroke-dasharray: 5390 500;
+    animation: draw 13s linear alternate infinite;
+  }
+  
+  @keyframes draw {
+    from {
+      stroke-dashoffset: 5390;
+    }
+    
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  /* cris */
+  path#a {
+    stroke: #76b39d;
+    stroke-width: 2.5px;
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+    animation: write 5s alternate infinite;
+    animation-delay: 2s;
+  }
+  
+  @keyframes write {
+    from {
+      stroke-dashoffset: 1300;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+/* HEADER */
+
+.titleContainer {
+    text-align: center;
+}
+
+#titleName {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/* TYPEWRITING */
+
+.cursor {
+    animation: blinking 0.8s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* PROJECTS */
+#projects {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+}
+
+.linkProject1 {
+    color: #76b39d;
+}
+
+.linkProject2 {
+    color: #f0b917;
+}
+
+.linkProject1:hover, .linkProject1:active, .linkProject2:hover, .linkProject32:active {
+    color: #155263;
+}
+
+/* mobile phone */
+@media screen and (max-width:768px) {
+    .tooltip span {
+        font-family: "Anonymous Pro", monospace;
+        font-size: 1rem;
+        color: lightgray;
+    }
+
+    .tooltip {
+        margin-bottom: 20px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width:768px) {
+    /* tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #155263;
+    color: #fff;
+    text-align: center;
+    top: -5px;
+    right: 105%;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.footer-link {
+    margin: 15px;
+}
