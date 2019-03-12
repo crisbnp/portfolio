@@ -90,7 +90,12 @@ svg {
   /* computer */
   path#b {
     stroke-dasharray: 5390 500;
-    -webkit-animation: draw 13s linear alternate infinite;
+    -webkit-animation-name: draw; 
+    -webkit-animation-duration: 13s;
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 2s;
     animation: draw 13s linear alternate infinite;
   }
   
@@ -120,9 +125,12 @@ svg {
     stroke-width: 2.5px;
     stroke-dasharray: 1300;
     stroke-dashoffset: 1300;
-    -webkit-animation: write 5s alternate infinite;
-    animation: write 5s alternate infinite;
+    -webkit-animation-name: write; 
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-delay: 2s;
+    animation: write 5s alternate infinite;
     animation-delay: 2s;
   }
   
