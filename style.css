@@ -93,6 +93,16 @@ svg {
     animation: draw 13s linear alternate infinite;
   }
   
+  @-webkit-keyframes draw {
+    from {
+      stroke-dashoffset: 5390;
+    }
+    
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
   @keyframes draw {
     from {
       stroke-dashoffset: 5390;
@@ -113,6 +123,15 @@ svg {
     animation-delay: 2s;
   }
   
+  @-webkit-keyframes write {
+    from {
+      stroke-dashoffset: 1300;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
   @keyframes write {
     from {
       stroke-dashoffset: 1300;
