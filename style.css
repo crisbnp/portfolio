@@ -90,6 +90,7 @@ svg {
   /* computer */
   path#b {
     stroke-dasharray: 5390 500;
+    -webkit-animation: draw 13s linear alternate infinite;
     animation: draw 13s linear alternate infinite;
   }
   
@@ -119,7 +120,9 @@ svg {
     stroke-width: 2.5px;
     stroke-dasharray: 1300;
     stroke-dashoffset: 1300;
+    -webkit-animation: write 5s alternate infinite;
     animation: write 5s alternate infinite;
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
   
