@@ -94,21 +94,21 @@ svg {
   }
   
   @-webkit-keyframes draw {
-    from {
+    0% {
       stroke-dashoffset: 5390;
     }
     
-    to {
+    100% {
       stroke-dashoffset: 0;
     }
   }
 
   @keyframes draw {
-    from {
+    0% {
       stroke-dashoffset: 5390;
     }
     
-    to {
+    100% {
       stroke-dashoffset: 0;
     }
   }
@@ -124,19 +124,19 @@ svg {
   }
   
   @-webkit-keyframes write {
-    from {
+    0% {
       stroke-dashoffset: 1300;
     }
-    to {
+    100% {
       stroke-dashoffset: 0;
     }
   }
 
   @keyframes write {
-    from {
+    0% {
       stroke-dashoffset: 1300;
     }
-    to {
+    100% {
       stroke-dashoffset: 0;
     }
   }
