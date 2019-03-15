@@ -101,9 +101,12 @@ svg {
   
   @-webkit-keyframes draw {
     0% {
-      stroke-dashoffset: 5390;
+      stroke-dashoffset: 5391;
     }
-    
+    1% {
+        stroke-dashoffset: 5390;
+      }
+
     100% {
       stroke-dashoffset: 0.01;
     }
@@ -125,22 +128,13 @@ svg {
     stroke-width: 2.5px;
     stroke-dasharray: 1300;
     stroke-dashoffset: 1300;
+    animation: write 5s alternate infinite;
+    animation-delay: 2s;
     -webkit-animation-name: write; 
     -webkit-animation-duration: 5s;
     -webkit-animation-direction: alternate;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-delay: 2s;
-    animation: write 5s alternate infinite;
-    animation-delay: 2s;
-  }
-  
-  @-webkit-keyframes write {
-    0% {
-      stroke-dashoffset: 1300;
-    }
-    100% {
-      stroke-dashoffset: 0;
-    }
   }
 
   @keyframes write {
@@ -148,7 +142,19 @@ svg {
       stroke-dashoffset: 1300;
     }
     100% {
-      stroke-dashoffset: 0;
+      stroke-dashoffset: 1;
+    }
+  }
+
+  @-webkit-keyframes write {
+    0% {
+      stroke-dashoffset: 1301;
+    }
+    1% {
+        stroke-dashoffset: 1300;
+      }
+    100% {
+      stroke-dashoffset: 1;
     }
   }
 
