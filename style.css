@@ -212,8 +212,9 @@ path#a {
 
 .desc {
   font-family: "Anonymous Pro", monospace;
-  font-size: 1rem;
-  color: lightgray;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  color: rgb(87 83 78);
   transition: padding 1s;
 }
 
